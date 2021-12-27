@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+    .btn-first{
+         @apply  p-2 text-white bg-gradient-to-r from-orange-500 to-yellow-500 hover:-translate-y-0.5 hover:shadow-xl transform transition active:scale-75 rounded-2xl border-none shadow-lg 
+    }
+    .btn-second{
+        @apply inline-block px-5 py-3 rounded-lg shadow-lg bg-gradient-to-r from-orange-500 to-yellow-500  hover:-translate-y-0.5 hover:shadow-xl transform transition active:scale-75 text-white uppercase  font-semibold text-sm sm:text-base
+         
+    }
+    .nav-hover{
+        @apply hover:border-purple-600  border-b-2  border-white py-3
+    }
+    .text-icon-hover{
+        @apply hover:-translate-y-0.5 transform transition
+    }
+}
